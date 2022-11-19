@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: serif;
+    
+}
+form{
+    background-color: rgb(223,675,123);
+    padding: 40px;
+    border-radius: 8px;
+}
+input,textarea{
+    width: 100%;
+    margin: 10px 0;
+}
+form input{
+    height: 30px;
+}

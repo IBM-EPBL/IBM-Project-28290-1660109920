@@ -1,0 +1,70 @@
+
+<title>Sign in page</title>
+
+  <link rel="stylesheet"type="text/css"href="style.css"/>
+
+<body style="background-color:hsl(239, 52%, 45%);" data-target="#pb-navbar" data-offset="200" data-spy="scroll">
+
+
+  <div class="container" style="padding-top:150px;">
+
+    <div class="row" style="height:100px;">
+      <h1 class="page-header text-primary mx-auto">REGISTER <span style="color:#f8c20f;">PAGE FOR CUSTOMER</span></h1>
+    </div>
+
+    <div class="col-sm height: 100px; justify-content-center ">
+      <div class="alert alert-{{category}} " style="color: red;"></div>
+
+    </div>
+
+    <div class="row justify-content-center" style="height: 500px;">
+      
+      <form action="{{ url_for('register') }}" method="POST">
+
+        <div class="form-group">
+          <label for="exampleInputname">Name</label>
+          <input type="text" style="color: #f81313; width: 400px;" class="form-control" id="name" name="name" placeholder="Enter Name"
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputEmail">Email address</label>
+          <input type="email" style="color: #ec0c0c;  width: 400px;" class="form-control" id="email" name="email"
+            placeholder="Enter email" required>
+          <small id="emailHelp">We'll never share your email with anyone else.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputPassword">Password</label>
+          <input type="password" style="color: #f70c0c;  width: 400px;" class="form-control" id="password" name="password"
+            placeholder="Password" required>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputphonenumber">Phone Number</label>
+          <input type="tel" style="color: rgb(248, 216, 36);  width: 400px;" class="form-control" id="phonenumber" name="phonenumber"
+            placeholder="Enter phone Number" pattern="[0-9]{10}" required>
+            <div class="row text-center mx-auto mb-3 ">
+              <a href="signinpage.html" class="btn btn-primary btn-block " role="button"><span
+          style="color:#4212ee; font-weight: bolder;">Submit</span></button>
+
+        
+      </form>
+    </div>
+
+
+    <div class="row d-flex">
+
+      <a href="Untitled-1.html" class="btn btn-primary mx-auto" role="button"><span
+          style="color:#c1f113; font-weight: bolder;">Back</span>
+      </a>
+
+    </div>
+
+  </div>
+
+  
+
+</body>
+
+</html>

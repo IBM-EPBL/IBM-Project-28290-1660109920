@@ -1,0 +1,87 @@
+
+<title>Sign in page</title>
+
+<link rel="stylesheet" href="style.css">
+<body data-spy="scroll" data-target="#pb-navbar" data-offset="200" style="background-color:#dd965c;">
+
+  </section>
+  <div class="container1">
+
+    <div class="row" style="height:250px; padding-top: 150px;">
+      <h1 class="page-header text-primary mx-auto">LOGIN FOR<span style="color:#f80a0a;"> CUSTOMER</span></h1>
+    </div>
+
+    <div class="row height: 100px; ">
+      
+      <div class="alert alert-{{category}} mx-auto" style="color: red; "></div>
+      
+    </div>
+
+    <div class="row justify-content-center" style="height: 350px;">
+
+      <form action="{{ url_for('login') }}" method="POST">
+
+        <div class="form-group text-center">
+          <label for="exampleInputid"><span style="color: #f5e50b;">Id</span></label>
+          <input type="tel" style="color: white; width:400px;" class="form-control" id="id" name="idn"
+            placeholder="Enter Id" pattern="[0-9]{4}" required>
+          <small id="emailHelp">We'll never share your Password with anyone else.</small>
+        </div>
+        <div class="form-group text-center">
+          <label for="exampleInputPassword1"><span style="color: #f01414;">Password</span></label>
+          <input style="color: white;" type="password" class="form-control" id="password" name="password"
+            placeholder="Password" required>
+        </div>
+
+        <div class="row text-center mx-auto mb-3 ">
+          <a href="complaint.html" class="btn btn-primary btn-block " role="button"><span style="color:rgb(17, 223, 51); font-weight: bolder; ">
+            Submit</span></button>
+
+      </form>
+    </div>
+
+    <div class="row mb-6" >
+      <h1 class="page-header text-primary mx-auto">FORGOT YOUR<span style="color:#4f0ee9;"> ID!</span></h1>
+    </div>
+
+    <div class="row justify-content-center" style="height: 350px;">
+
+      <form action="{{ url_for('verifyemail') }}" method="POST">
+
+        <div class="form-group text-center">
+          <label for="exampleInputemail"><span style="color: white;">Email ID</span></label>
+          <input type="email" style="color: #5e09e6; width:400px;" class="form-control" id="verifyemail"
+            name="verifyemail" placeholder="Enter Email Id" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary"><span style="color:black; font-weight: bolder; "> Send
+            Email</span></button>
+
+      </form>
+    </div>
+
+
+
+    <div class="row d-flex bg-primary justify-content-center ">
+      <a href="{{ url_for('forgot.html') }}" class="btn btn-primary" role="button"><span
+          style="color:rgb(100, 23, 243); font-weight: bolder">Forgot Password</span> </a>
+
+      <a href="{{ url_for('home') }}" class="btn btn-primary  " role="button"><span
+          style="color:rgb(64, 231, 13); font-weight: bolder; ">Back</span> </a>
+
+      <a href="{{ url_for('singnup.html') }}" class="btn btn-primary " role="button"><span
+          style="color:#ff1414; font-weight: bolder; ">Create an Account</span> </a>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
